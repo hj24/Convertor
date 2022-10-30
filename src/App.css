@@ -1,0 +1,21 @@
+.App {
+  width: 460px;
+  height: 380px;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #2b312c;
+}
+
+.App-header .ant-page-header-heading-title {
+  color: white;
+}
+
+.App-header .ant-page-header-heading-sub-title {
+  color: white;
+}
+
+.App-tab > .ant-tabs-card {
+  padding: 20px 10px;
+}

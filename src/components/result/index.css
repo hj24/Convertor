@@ -1,0 +1,13 @@
+.Result {
+    display: block;
+}
+
+.Result-copy {
+    float: right;
+    margin-top: 3px;
+}
+
+.Result-copy > .ant-btn {
+    color: white;
+    background-color: #2b312c;
+}

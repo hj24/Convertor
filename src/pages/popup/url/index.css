@@ -1,0 +1,13 @@
+.URL-function {
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.URL-decoder, .URL-encoder {
+    float: left;   
+}
+
+.URL-results {
+    margin-top: 10px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Convertor",
+  "description": "Convertor for URL encode/decode, encrypt, Json formatter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [],
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "persistent": true
+}
