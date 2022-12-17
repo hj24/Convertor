@@ -3,7 +3,9 @@
   "description": "Convertor for URL encode/decode, encrypt, Json formatter",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": [],
+  "permissions": [
+    "tabs"
+  ],
   "icons": {
     "16": "icon/icon16.png",
     "48": "icon/icon48.png",

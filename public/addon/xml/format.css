@@ -1,0 +1,23 @@
+#minifyBtn {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#formatBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#clearBtn {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#copyBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#xmlOutputTextBox {
+    padding: 3px 3px 3px 3px;
+}

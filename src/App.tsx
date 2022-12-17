@@ -1,17 +1,9 @@
 import React from 'react';
-import { Radio, Tabs, PageHeader } from 'antd';
-import logo from './logo.svg';
-import './App.css';
-import 'antd/dist/antd.css'
-import {
-  Route,
-} from 'react-router-dom'
-
+import { Radio, Tabs } from 'antd';
+import { PageHeader } from '@ant-design/pro-layout'
 import URL from './pages/popup/url'
-import TabPane from 'antd/lib/tabs/TabPane';
-
-
-
+import XML from './pages/popup/xml'
+import './App.css';
 
 
 const DEFAULT_KEY = "url"
@@ -30,7 +22,7 @@ const TAB_CONTENTS = [
   {
     key: "xml",
     name: "XML",
-    component: "/xml"
+    component: <XML/>
   },
   {
     key: "encrypt",
@@ -38,10 +30,6 @@ const TAB_CONTENTS = [
     component: "/encrypt"
   },
 ]
-
-
-
-
 
 class App extends React.Component<any, any> {
   constructor(props: any) {
@@ -55,13 +43,7 @@ class App extends React.Component<any, any> {
     return (
       <div className="App">
         <div className="App-header">
-          <PageHeader
-            backIcon={ false }
-            ghost={ true }
-            onBack={() => null}
-            title={"Convetor"}
-            subTitle="Useful develop tools"
-          />
+          <PageHeader backIcon={false} ghost={true} onBack={() => null} title="Convetor" subTitle="Useful develop tools"/>
         </div> 
         <div className="App-tab">
           <Tabs

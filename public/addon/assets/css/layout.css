@@ -1,0 +1,76 @@
+.main {
+    background-color: #F0F0F0;
+    height: 830px; 
+    width: 1800px;
+    margin-top: 30px;
+}
+
+.head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submain {
+    display: inline-block;
+    height: 730px;
+    width: 1700px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.inputContainer {
+    height: 730px;
+    width: 820px;
+}
+
+.outputContainer {
+    height: 730px;
+    width: 820px;
+    margin-top: -730px;
+    margin-left: 880px;
+}
+
+.navBar {
+    background-color: #2b312c;
+    height: 60px;
+    width: 820px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.navBtn {
+    height: 30px;
+}
+
+.funcArea {
+    height: 670px;
+    width: 820px;
+}
+
+.inputTextBox {
+    height: 670px;
+    width: 814px;
+    resize: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.outputTextBox {
+    height: 670px;
+    width: 814px;
+    resize: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #002635;
+    white-space: pre;
+    overflow-y: auto;
+}
+
+.btnFont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
