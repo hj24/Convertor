@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/highlight.min.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">Json Fomat</div>
+            <div class="submain">
+                <div class="inputContainer">
+                    <div class="navBar">
+                        <button class= "navBtn btnFont" id="minifyBtn">Minify</button>
+                        <button class= "navBtn btnFont" id="formatBtn">Format</button>
+                    </div>
+                    <div class="funcArea">
+                        <textarea spellcheck="false" class="inputTextBox" id="jsonInputTextBox"></textarea>
+                    </div>
+                </div>
+                <div class="outputContainer">
+                    <div class="navBar">
+                        <button class= "navBtn btnFont" id="clearBtn">Clear</button>
+                        <button class= "navBtn btnFont" id="copyBtn">Copy</button>
+                    </div>
+                    <div class="funcArea">
+                        <div class="outputTextBox" id="jsonOutputTextBox"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="format.js"></script>
+    <script src="../assets/scripts/lodash.core.js"></script>
+    <script src="../assets/scripts/highlight.min.js"></script>
+</body>
+
+</html>

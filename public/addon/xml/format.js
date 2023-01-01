@@ -5,7 +5,15 @@ let xmlFmtContext = {
 
 var minifyXML = (xmlString) => {
     var obj = new DOMParser().parseFromString(xmlString, "text/xml");
-    var minified = "<?xml version=\"" + obj.xmlVersion + "\" encoding=\"" + obj.xmlEncoding + "\"?>";
+
+    var minified = "<?xml"
+    if (obj.xmlVersion) {
+        minified += " version=\"" + obj.xmlVersion + "\"";
+    }
+    if (obj.xmlEncoding) {
+        minified += " encoding=\"" + obj.xmlEncoding + "\"";
+    }
+    minified += "?>";
 
     function minifyNode(node) {
         if (!node) {
@@ -57,7 +65,14 @@ var formatXml = (xmlString) => {
     var obj = new DOMParser().parseFromString(minified, "text/xml");
   
     // Rebuild the formatted string with the XML declaration
-    var formatted = "<?xml version=\"" + obj.xmlVersion + "\" encoding=\"" + obj.xmlEncoding + "\"?>\n";
+    var formatted = "<?xml"
+    if (obj.xmlVersion) {
+        formatted += " version=\"" + obj.xmlVersion + "\"";
+    }
+    if (obj.xmlEncoding) {
+        formatted += " encoding=\"" + obj.xmlEncoding + "\"";
+    }
+    formatted += "?>\n";
   
     // Recursively format the XML object
     function formatNode(node, indent) {
