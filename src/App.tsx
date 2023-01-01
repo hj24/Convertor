@@ -3,6 +3,7 @@ import { Radio, Tabs } from 'antd';
 import { PageHeader } from '@ant-design/pro-layout'
 import URL from './pages/popup/url'
 import XML from './pages/popup/xml'
+import Json from './pages/popup/json';
 import './App.css';
 
 
@@ -17,7 +18,7 @@ const TAB_CONTENTS = [
   {
     key: "json",
     name: "JSON",
-    component: "/json"
+    component: <Json/>
   },
   {
     key: "xml",
@@ -25,9 +26,9 @@ const TAB_CONTENTS = [
     component: <XML/>
   },
   {
-    key: "encrypt",
-    name: "Encrypt",
-    component: "/encrypt"
+    key: "base64",
+    name: "Base64",
+    component: "/base64"
   },
 ]
 

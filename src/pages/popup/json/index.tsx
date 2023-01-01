@@ -13,8 +13,7 @@ const featureList = [
     },
 ]
 
-
-const XML: React.FC<{}> = () => {
+const Json: React.FC<{}> = () => {
     const [current, setCurrent] = useState(0);
     const [feature, setFeature] = useState(featureList[0].value);
 
@@ -46,10 +45,10 @@ const XML: React.FC<{}> = () => {
     const goto = (featureSelected: string) => {
         switch (featureSelected) {
             case featureList[0].value:
-                chrome.tabs.create({ url: chrome.runtime.getURL("addon/xml/format.html") });
+                chrome.tabs.create({ url: chrome.runtime.getURL("addon/json/format.html") });
                 break;
             case featureList[1].value:
-                chrome.tabs.create({ url: chrome.runtime.getURL("addon/xml/diff.html") });
+                chrome.tabs.create({ url: chrome.runtime.getURL("addon/json/diff.html") });
                 break;
             default:
                 console.error("feature not support!")
@@ -64,6 +63,7 @@ const XML: React.FC<{}> = () => {
     const prev = () => {
         setCurrent(current - 1);
     };
+
 
     const steps = [
         {
@@ -113,4 +113,4 @@ const XML: React.FC<{}> = () => {
     );
 }
 
-export default XML;
+export default Json;
