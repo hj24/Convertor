@@ -4,6 +4,7 @@ import { PageHeader } from '@ant-design/pro-layout'
 import URL from './pages/popup/url'
 import XML from './pages/popup/xml'
 import Json from './pages/popup/json';
+import Base64 from './pages/popup/base64';
 import './App.css';
 
 
@@ -28,7 +29,7 @@ const TAB_CONTENTS = [
   {
     key: "base64",
     name: "Base64",
-    component: "/base64"
+    component: <Base64/>
   },
 ]
 

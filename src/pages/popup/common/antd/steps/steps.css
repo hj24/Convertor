@@ -1,0 +1,17 @@
+:where(.css-foam9q).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background-color: #2b312c;
+    border-color: #2b312c;
+}
+
+.ant-radio-group-solid :where(.css-foam9q).ant-radio-button-wrapper-checked:not(:where(.css-foam9q).ant-radio-button-wrapper-disabled) {
+    background: #2b312c;
+    border-color: #2b312c;
+}
+
+:where(.css-foam9q).ant-btn-primary {
+    background-color: #2b312c;
+}
+
+:where(.css-foam9q).ant-radio-button-wrapper-checked:not(:where(.css-foam9q).ant-radio-button-wrapper-disabled)::before {
+    background-color: #2b312c;
+}

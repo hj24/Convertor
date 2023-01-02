@@ -1,0 +1,13 @@
+.Base64-function {
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.Base64-decoder, .Base64-encoder {
+    float: left;   
+}
+
+.Base64-results {
+    margin-top: 10px;
+}
