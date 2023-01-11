@@ -1,16 +1,17 @@
+/** @format */
+
 import React from 'react';
-import { Button } from 'antd'
+import {Button} from 'antd';
 
 interface Props {
-    encodedURL: string
-    callback: (results: string) => void
+    encodedURL: string;
+    callback: (results: string) => void;
 }
 
 export default class URLDecoder extends React.Component<Props, any> {
-
     doDecode = () => {
         this.props.callback(decodeURI(this.props.encodedURL));
-    }
+    };
 
     render() {
         return (
@@ -19,5 +20,4 @@ export default class URLDecoder extends React.Component<Props, any> {
             </div>
         );
     }
-
 }

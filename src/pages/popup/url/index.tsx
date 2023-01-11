@@ -1,53 +1,54 @@
-import React, { TextareaHTMLAttributes } from 'react';
-import URLEncoder from './encoder'
-import URLDecoder from './decoder'
-import { Input } from 'antd';
-import './index.css'
-import Result from '../../../components/result'
+/** @format */
 
-const {TextArea} = Input
+import React from 'react';
+import URLEncoder from './encoder';
+import URLDecoder from './decoder';
+import {Input} from 'antd';
+import './index.css';
+import Result from '../../../components/result';
+
+const {TextArea} = Input;
 
 interface State {
-    rawURL: string
-    results: string
+    rawURL: string;
+    results: string;
 }
 
 export default class URL extends React.Component<any, State> {
-
     constructor(props: any) {
-        console.log("MainPage constructor loaded");
+        console.log('MainPage constructor loaded');
         super(props);
         this.state = {
-            rawURL: "",
-            results: ""
+            rawURL: '',
+            results: '',
         };
     }
 
     updateResults = (res: string) => {
-        console.log("results updated: "+res);
+        console.log('results updated: ' + res);
         this.setState({
             rawURL: this.state.rawURL,
-            results: res
+            results: res,
         });
-        
-    }
+    };
 
-    onInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {    
+    onInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         this.setState({
-            rawURL: e.target.value
-        })
-        console.log("input saved: " + e.target.value);
-    }
+            rawURL: e.target.value,
+        });
+        console.log('input saved: ' + e.target.value);
+    };
 
     render() {
         return (
             <div className="URL">
                 <form>
                     <div className="URL-input">
-                        <TextArea placeholder="Enter url to decode or encode..."
-                            autoSize={{ minRows: 2, maxRows: 5 }}
+                        <TextArea
+                            placeholder="Enter url to decode or encode..."
+                            autoSize={{minRows: 2, maxRows: 5}}
                             allowClear
-                            onChange={this.onInput} 
+                            onChange={this.onInput}
                         />
                     </div>
                     <div className="URL-function">
@@ -63,6 +64,6 @@ export default class URL extends React.Component<any, State> {
                     </div>
                 </form>
             </div>
-        );  
+        );
     }
 }
