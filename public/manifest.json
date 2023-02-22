@@ -1,11 +1,9 @@
 {
-  "name": "Convertor",
-  "description": "Convertor for URL encode/decode, encrypt, Json formatter",
+  "name": "Parse & Diff Tool",
+  "description": "Save engineers time from endless manual en/decode/diff job.",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": [
-    "tabs"
-  ],
+  "permissions": [],
   "icons": {
     "16": "icon/icon16.png",
     "48": "icon/icon48.png",
