@@ -14,3 +14,7 @@ Save engineers' time from endless manual en/decode/diff job.
 2. `yarn` or `yarn install`
 3. `yarn build`
 4. `yarn lint` 
+
+## CHANGELOG
+### 2023-03-29 - v1.0.0.1 
+- Bug fix: https://github.com/hj24/Convertor/issues/5

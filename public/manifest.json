@@ -1,7 +1,7 @@
 {
   "name": "Parse & Diff Tool",
   "description": "Save engineers time from endless manual en/decode/diff job.",
-  "version": "1.0",
+  "version": "1.0.0.1",
   "manifest_version": 3,
   "permissions": [],
   "icons": {
