@@ -140,9 +140,13 @@ var onInputChangeHandler = () => {
 var renderOutputCommonPart = (outputText) => {
     try {
         // set pre & code label per highlight.js requirements
-        document.getElementById("xmlOutputTextBox").innerHTML = '<pre id="xmlOutputPre"><code class="xml">' + outputText + "</code></pre>";
+        document.getElementById("xmlOutputTextBox").innerHTML = '<pre id="xmlOutputPre"><code id="xmlOutputPost">' + outputText + "</code></pre>";
+        // the inner container should have the same height with parent container
+        // ISSUE: https://github.com/hj24/Convertor/issues/5
+        document.getElementById("xmlOutputPre").style.height = "100%"
+        document.getElementById("xmlOutputPost").style.height = "100%"
 
-        var el = document.querySelector('.xml');
+        var el = document.querySelector('#xmlOutputPost');
         esc = _.escape(el.innerHTML);
         // Reasign escaped to node and initialize highlight.js
         el.innerHTML = esc;

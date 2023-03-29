@@ -32,9 +32,13 @@ var onInputChangeHandler = () => {
 var renderOutputCommonPart = (outputText) => {
     try {
         // set pre & code label per highlight.js requirements
-        document.getElementById("jsonOutputTextBox").innerHTML = '<pre id="jsonOutputPre"><code class="json">' + outputText + "</code></pre>";
+        document.getElementById("jsonOutputTextBox").innerHTML = '<pre id="jsonOutputPre"><code id="jsonOutputPost">' + outputText + "</code></pre>";
+        // the inner container should have the same height with parent container
+        // ISSUE: https://github.com/hj24/Convertor/issues/5
+        document.getElementById("jsonOutputPre").style.height = "100%"
+        document.getElementById("jsonOutputPost").style.height = "100%"
 
-        var el = document.querySelector('.json');
+        var el = document.querySelector('#jsonOutputPost');
         esc = _.escape(el.innerHTML);
         // Reasign escaped to node and initialize highlight.js
         el.innerHTML = esc;
@@ -63,7 +67,6 @@ var onMinifyClickHandler = () => {
     console.log(minifiedValue);
     renderOutputCommonPart(minifiedValue);
     document.getElementById("jsonOutputPre").style.whiteSpace = "normal";
-    document.getElementById("jsonOutputPre").style.overflowWrap = "break-word";
 }
 
 var onFormatClickHandler = () => {
