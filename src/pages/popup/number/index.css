@@ -1,0 +1,52 @@
+.NumberBase-input {
+    width: 320px;
+}
+
+.NumberBase-input .ant-input-group-addon {
+    width: 92px;
+}
+
+.NumberBase-output {
+    width: 320px;
+}
+
+.NumberBase-output .ant-input-group-addon {
+    width: 92px;
+}
+
+.NumberBase-gap {
+    height: 10px;
+}
+
+.NumberBase-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NumberBase-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#NumberBase-buttons-convert {
+    color: white;
+    background-color: #2b312c;
+}
+
+#NumberBase-buttons-copy {
+    color: white;
+    background-color: #2b312c;
+}
+
+#NumberBase-radix-button-layout {
+    margin-right: 30px;
+}
+
+#NumberBase-copy-button-layout {
+    margin-left: 30px;
+}

@@ -1,5 +1,3 @@
-/** @format */
-
 import React from 'react';
 import URLEncoder from './encoder';
 import URLDecoder from './decoder';

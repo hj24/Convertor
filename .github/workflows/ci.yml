@@ -1,4 +1,4 @@
-name: Convertor CI Process
+name: Converter CI Process
 run-name: ${{ github.actor }} is running CI workflow 
 on:
   pull_request:
@@ -23,3 +23,20 @@ jobs:
         yarn install
         yarn lint
         yarn build
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pull code
+      uses: actions/checkout@v3
+    - name: setup nodejs
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.16.x'
+    - name: Install yarn
+      run: npm install -g yarn
+    - name: Run unittest
+      env:
+        CI: ""
+      run: |
+        yarn install
+        yarn test
