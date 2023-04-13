@@ -6,9 +6,9 @@ Save engineers' time from endless manual en/decode/diff job.
 > [Click here to install](https://chrome.google.com/webstore/detail/parse-diff-tool/plldopcffknjbimajdlcakmlgimfofcf?hl=zh)
 
 ## Feature
-![](assets/convertor-1.jpg)
-![](assets/convertor-3.jpg)
-![](assets/convertor-4.jpg)
+![](assets/converter-1.jpg)
+![](assets/converter-3.jpg)
+![](assets/converter-4.jpg)
 
 ## Contribute
 1. `git clone`
