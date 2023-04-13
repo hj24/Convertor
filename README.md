@@ -8,13 +8,19 @@ Save engineers' time from endless manual en/decode/diff job.
 ## Feature
 ![](assets/convertor-1.jpg)
 ![](assets/convertor-3.jpg)
+![](assets/convertor-4.jpg)
 
 ## Contribute
 1. `git clone`
 2. `yarn` or `yarn install`
 3. `yarn build`
 4. `yarn lint` 
+5. `yarn test`
 
 ## CHANGELOG
+### 2023-04-11 - v1.1.0.4
+- Feature: Number base conversion
+- PR: https://github.com/hj24/Convertor/pull/10
+
 ### 2023-03-29 - v1.0.0.1 
 - Bug fix: https://github.com/hj24/Convertor/issues/5

@@ -1,5 +1,3 @@
-/** @format */
-
 import React, {useEffect, useState} from 'react';
 import {Button, Steps, Radio, message} from 'antd';
 import type {RadioChangeEvent} from 'antd';

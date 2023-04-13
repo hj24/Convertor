@@ -1,5 +1,3 @@
-/** @format */
-
 import React from 'react';
 import {Tabs} from 'antd';
 import {PageHeader} from '@ant-design/pro-layout';
@@ -7,15 +5,16 @@ import URL from './pages/popup/url';
 import XML from './pages/popup/xml';
 import Json from './pages/popup/json';
 import Base64 from './pages/popup/base64';
+import NumberBase from './pages/popup/number';
 import './App.css';
 
-const DEFAULT_KEY = 'url';
+const DEFAULT_KEY = 'number';
 
 const TAB_CONTENTS = [
     {
-        key: DEFAULT_KEY,
-        name: 'URL',
-        component: <URL />,
+        key: 'base64',
+        name: 'Base64',
+        component: <Base64 />,
     },
     {
         key: 'json',
@@ -23,14 +22,19 @@ const TAB_CONTENTS = [
         component: <Json />,
     },
     {
+        key: 'number',
+        name: 'Number',
+        component: <NumberBase />,
+    },
+    {
+        key: 'url',
+        name: 'URL',
+        component: <URL />,
+    },
+    {
         key: 'xml',
         name: 'XML',
         component: <XML />,
-    },
-    {
-        key: 'base64',
-        name: 'Base64',
-        component: <Base64 />,
     },
 ];
 
@@ -47,7 +51,7 @@ class App extends React.Component<any, any> {
                         backIcon={false}
                         ghost={true}
                         onBack={() => null}
-                        title="Convetor"
+                        title="Conveter"
                         subTitle="Useful develop tools"
                     />
                 </div>
