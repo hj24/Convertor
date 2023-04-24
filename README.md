@@ -18,6 +18,10 @@ Save engineers' time from endless manual en/decode/diff job.
 5. `yarn test`
 
 ## CHANGELOG
+### 2023-04-24 - v1.1.1.1
+- Enhancement: iframe loading
+- PR: https://github.com/hj24/Convertor/pull/13
+
 ### 2023-04-11 - v1.1.0.4
 - Feature: Number base conversion
 - PR: https://github.com/hj24/Convertor/pull/10

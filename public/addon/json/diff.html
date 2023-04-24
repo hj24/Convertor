@@ -2,17 +2,23 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css" >
+    <link rel="stylesheet" href="diff.css">
 </head>
 
 <body>
     <div class="main">
         <div class="head">Json Diff</div>
-            <iframe class="submain" src='https://prettydiff.com/'>
+            <iframe class="submain" id="jsonDiffIFrame" src='https://prettydiff.com/'>
                 您的浏览器暂时不支持 iframe
             </iframe>
         </div>
     </div>
+    <script src="../assets/layui/layui.js"></script>
+    <script src="../assets/scripts/iframeutils.js"></script>
+    <script src="diff.js"></script>
 </body>
 
 </html>
