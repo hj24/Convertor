@@ -8,7 +8,7 @@ interface Props {
 
 export default class URLEncoder extends React.Component<Props, any> {
     doEecode = () => {
-        this.props.callback(encodeURI(this.props.decodedURL));
+        this.props.callback(encodeURIComponent(this.props.decodedURL));
     };
 
     render() {
