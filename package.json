@@ -1,6 +1,6 @@
 {
   "name": "convertor",
-  "version": "0.1.0",
+  "version": "1.1.2.0",
   "private": true,
   "dependencies": {
     "@ant-design/pro-components": "^2.3.35",

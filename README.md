@@ -6,9 +6,9 @@ Save engineers' time from endless manual en/decode/diff job.
 > [Click here to install](https://chrome.google.com/webstore/detail/parse-diff-tool/plldopcffknjbimajdlcakmlgimfofcf?hl=zh)
 
 ## Feature
-![](assets/converter-1.jpg)
-![](assets/converter-3.jpg)
-![](assets/converter-4.jpg)
+![](assests/converter-popup.jpg)
+![](assests/converter-tab.jpg)
+![](assests/converter-iframe.jpg)
 
 ## Contribute
 1. `git clone`
@@ -18,6 +18,10 @@ Save engineers' time from endless manual en/decode/diff job.
 5. `yarn test`
 
 ## CHANGELOG
+### 2023-06-15 - v1.1.2.0
+- Fix: Decode complex URL
+- PR: https://github.com/hj24/Convertor/pull/17
+
 ### 2023-04-24 - v1.1.1.1
 - Enhancement: iframe loading
 - PR: https://github.com/hj24/Convertor/pull/13
